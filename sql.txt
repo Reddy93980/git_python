@@ -1,0 +1,31 @@
+SELECT * FROM pets.orders;
+INSERT INTO pets.orders (item, amount, date_of_sales, city)
+VALUES
+('A', 100, '2024-01-21', 'LKO'),
+('B', 200, '2024-01-21', 'DEL'),
+('C', 150, '2024-01-21', 'LKO'),
+('D', 220, '2024-01-22', 'DEL'),
+('E', 100, '2024-01-22', 'DEL'),
+('F', 180, '2024-01-23', 'BLO'),
+('G', 200, '2024-01-23', 'LKO'),
+('H', 250, '2024-01-23', 'DEL');
+select city,date_of_sales from orders;
+SELECT city, SUM(amount) AS total_sales
+FROM orders
+GROUP BY city;
+show tables;
+create table employee(
+emp char(20),
+Dept varchar(100),
+salary int
+);
+insert into employee (emp,Dept,salary) values
+('A','HR',10000),
+('B','FINANCE',8000),
+('C','HR',5000),
+('D','IT',20000),
+('E','FINANCE',5000);
+select * from employee;
+select Dept,sum(salary) As total_salary from employee  group by Dept having total_salary>15000;
+select salary from employee order by salary desc limit 1 offset 0;
+select salary from employee order by salary desc;
