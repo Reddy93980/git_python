@@ -1,6 +1,5 @@
 #swaping two values
 # enter first two numbers
-#this is samplecode comments
 a=input("enter the value of the  first variable(a):  ")
 b=input("enter the value  of the second variable(b): ")
 print(f"original values: a = {a}, b={b}")
