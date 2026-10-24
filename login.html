@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+
+    .login-card {
+      width: min(100%, 380px);
+      padding: 32px;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgb(15 23 42 / 10%);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      text-align: center;
+    }
+
+    .intro {
+      margin: 0 0 24px;
+      text-align: center;
+      color: #64748b;
+    }
+
+    label {
+      display: block;
+      margin: 16px 0 6px;
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      padding: 11px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font: inherit;
+    }
+
+    input:focus {
+      border-color: #2563eb;
+      outline: 2px solid #bfdbfe;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 22px;
+      padding: 12px;
+      border: 0;
+      border-radius: 6px;
+      background: #2563eb;
+      color: #fff;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .note {
+      margin: 16px 0 0;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="login-card">
+    <h1>Welcome back</h1>
+    <p class="intro">Log in to your account</p>
+
+    <form action="#" method="post">
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" autocomplete="username" required>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required>
+
+      <button type="submit">Log in</button>
+    </form>
+
+    <p class="note">Demo page only. Connect the form to a secure backend to authenticate users.</p>
+  </main>
+</body>
+</html>
